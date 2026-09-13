@@ -1,4 +1,6 @@
+
 import "./Home.css";
+
 function Home() {
   return (
     <section id="home" className="home">
@@ -32,13 +34,20 @@ function Home() {
             using React.js, JavaScript and modern web technologies.
           </p>
 
+          {/* Buttons */}
           <div className="home-buttons">
 
-            <a href="#projects" className="home-btn primary-btn">
+            <a
+              href="#projects"
+              className="home-btn primary-btn"
+            >
               View My Projects
             </a>
 
-            <a href="#contact" className="home-btn secondary-btn">
+            <a
+              href="#contact"
+              className="home-btn secondary-btn"
+            >
               Contact Me
             </a>
 
@@ -46,12 +55,28 @@ function Home() {
 
         </div>
 
-        {/* Logo */}
-        <div className="home-logo-container">
+        {/* Right Profile Image */}
+        <div className="home-profile-container">
 
-          <div className="logo-glow"></div>
+          {/* Glow behind image */}
+          <div className="profile-glow"></div>
 
-          <div className="home-logo">
+          {/* Decorative circle */}
+          <div className="profile-ring"></div>
+
+          {/* Profile Image */}
+          <div className="profile-image-wrapper">
+
+            <img
+              src="/photos/profile.png"
+              alt="Chandan Ghanghav"
+              className="profile-image"
+            />
+
+          </div>
+
+          {/* CG Badge */}
+          <div className="profile-badge">
             <span>C</span>
             <span>G</span>
           </div>

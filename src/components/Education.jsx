@@ -45,7 +45,7 @@ function Education() {
               <div className="education-logo-wrapper">
                 <div className="education-logo">
                   <img
-                    src="/dbatu-logo.png"
+                    src="/photos/dbatu-logo.png"
                     alt="DBATU University Logo"
                   />
                 </div>

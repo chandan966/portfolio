@@ -1,7 +1,23 @@
-
 import "./Contact.css";
+import { sendEmail } from "../email";
 
 function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+
+    sendEmail(form)
+      .then(() => {
+        alert("Message sent successfully!");
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        alert("Failed to send message. Please try again.");
+      });
+  };
+
   return (
     <section id="contact" className="contact">
       <div className="container">
@@ -43,6 +59,7 @@ function Contact() {
 
               <div>
                 <span>Email</span>
+
                 <a href="mailto:chandanghanghav256@gmail.com">
                   chandanghanghav256@gmail.com
                 </a>
@@ -75,7 +92,9 @@ function Contact() {
 
             {/* Social Media */}
             <div className="social-section">
-              <span className="social-title">Connect With Me</span>
+              <span className="social-title">
+                Connect With Me
+              </span>
 
               <div className="social-links">
 
@@ -124,7 +143,10 @@ function Contact() {
           {/* =====================================
               CONTACT FORM
           ====================================== */}
-          <form className="contact-form">
+          <form
+            className="contact-form"
+            onSubmit={handleSubmit}
+          >
 
             {/* Name */}
             <div className="form-group">

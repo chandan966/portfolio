@@ -43,7 +43,7 @@ function Navbar() {
         </nav>
 
         {/* CV Button */}
-        <a href="/resume.pdf" className="cv-btn" download>
+        <a href="/photos/resume.pdf" className="cv-btn" download>
           <span>Download CV</span>
           <span className="cv-arrow">↓</span>
         </a>

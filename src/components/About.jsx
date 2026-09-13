@@ -16,7 +16,7 @@ function About() {
             <div className="about-image-inner">
               <span>CG</span>
             </div>
-my-frontend/src/components/About.jsx
+Web Developer
             <div className="about-floating-card about-card-one">
               <strong>3+</strong>
               <small>Years Learning</small>
