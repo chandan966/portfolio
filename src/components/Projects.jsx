@@ -14,10 +14,25 @@ const projects = [
     ],
     category: "Full Stack Web App",
   },
+  
   {
-    title: "Personal Portfolio",
+    title: "webmusic",
     description:
-      "A modern and responsive personal portfolio website showcasing my education, skills, projects, and development journey with a clean and professional interface.",
+      "WebMusic is a web-based music streaming platform that allows users to discover, stream, and manage their favorite songs.",
+    technologies: [
+      "React.js",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+    ],
+    category: "Full Stack Web App",
+  },
+  {
+    title: "tripnext",
+    description:
+      "TripNest is a web-based travel booking platform that allows users to search, compare, and book bus tickets and travel options through a user-friendly interface.",
     technologies: [
       "React.js",
       "HTML5",
